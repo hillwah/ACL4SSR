@@ -2,4 +2,5 @@
 # 数量：3条
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,anthropic.com

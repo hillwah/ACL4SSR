@@ -434,6 +434,7 @@ DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twimg.org
+DOMAIN-SUFFIX,x.com
 
 # Telegram
 DOMAIN-SUFFIX,t.me

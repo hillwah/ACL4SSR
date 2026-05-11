@@ -1,0 +1,34 @@
+name: Update Clash Rules
+
+on:
+  schedule:
+    # 每天 UTC 0 点运行（可自行修改时间）
+    - cron: '0 0 * * *'
+  workflow_dispatch:   # 允许手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download clash.yaml
+        run: |
+          curl -sL -o clash.yaml https://raw.githubusercontent.com/ignaciocastro/a-dove-is-dumb/refs/heads/main/clash.yaml
+
+      - name: Convert to Apple.list format
+        run: |
+          python3 convert.py clash.yaml Clash/FuckAdobe.list
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Clash/Adobe.list
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Adobe.list [skip ci]"
+            git push
+          fi

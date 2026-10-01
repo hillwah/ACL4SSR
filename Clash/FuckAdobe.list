@@ -1,5 +1,5 @@
 # Adobe block rules (generated from a-dove-is-dumb)
-# Last update: 2026-09-30 04:49 UTC
+# Last update: 2026-10-01 05:02 UTC
 DOMAIN,adobe.io
 DOMAIN,cc-api-data.adobe.io
 DOMAIN,crs.cr.adobe.com
@@ -5691,3 +5691,5 @@ DOMAIN,ynb4dnmkb3.6u13v.adobestats.io
 DOMAIN,90ss7qvydj6.4p4bv.adobestats.io
 DOMAIN,mdvuqnnr3dsl.4p4bv.adobestats.io
 DOMAIN,vonunaxc.61ro5.adobestats.io
+DOMAIN,9d6v9viz79.u0op6.adobestats.io
+DOMAIN,ljlijiscgm.u0op6.adobestats.io
